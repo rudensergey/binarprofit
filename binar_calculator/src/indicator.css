@@ -1,0 +1,19 @@
+.indincator {
+    width: 359px;
+    height: 90px;
+
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+}
+
+.indincator__name {
+
+}
+
+.indincator svg {
+    height: 16px;
+}
