@@ -1,0 +1,35 @@
+.term {
+    margin: 0px auto;
+    height: 100px;
+    width: 1150px;
+}
+
+.term-blocks {
+    height: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+}
+
+.block {
+    text-align: center;
+}
+
+.block p {
+    font-size: 14px;
+    color: #4999ea;
+}
+
+.block p svg {
+    height: 13px;
+    width: 13px;
+    padding-right: 5px;
+}
+
+.term__line {
+    height: 3px;
+	width: 1060px;
+	margin: 0px auto;
+	border-radius: 2px;
+    background-color: #4999ea;
+}

@@ -43,9 +43,10 @@ export default class Indicators extends React.Component {
                 />
 
                 <Indicator
-                    name={"Итого за весь период вы получите:"}
-                    result={"200%"}
+                    name={"Итого за весь период вы получите"}
+                    result={"200"}
                     final={true}
+                    curr={true}
                 />
             </div>
         );
