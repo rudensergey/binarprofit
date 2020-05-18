@@ -1,19 +1,32 @@
 .indincator {
     width: 359px;
     height: 90px;
+    margin: 20px;
 
     background: #ffffff;
     border: 1px solid #e6e6e6;
     border-radius: 4px;
 
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 60% 40%;
 }
 
-.indincator__name {
-
+.indicator__name {
+    margin: auto 0px;
+    padding-left: 22px;
+    font-size: 18px;
 }
 
-.indincator svg {
-    height: 16px;
+.indicator__result svg {
+    padding-right: 8px;
+    height: 15px;
+    width: 15px;
+}
+
+.indicator__result {
+    margin: auto 0px auto auto;
+    padding-right: 20px;
+    height: 25px;
+    font-size: 25px;
+    color: #4999ea;
 }
