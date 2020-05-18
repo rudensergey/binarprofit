@@ -1,6 +1,6 @@
 .indicators {
-	width: 1150px;
-    background-color: #e5f4ff;
+    width: 1150px;
+    margin: 0px auto;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

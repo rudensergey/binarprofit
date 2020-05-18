@@ -15,5 +15,20 @@ p,
 a {
   margin: 0px;
   color: #3F3F3F;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Rubik', sans-serif;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #e5f4ff;
+}
+
+.main__topic {
+  text-align: center;
+  padding: 30px 0px 30px 0px;
+  margin: 0px auto;
+  font-size: 40px;
+  font-weight: 300;
+  
 }

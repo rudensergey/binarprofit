@@ -4,11 +4,7 @@ import "./indicator.css";
 export default class Indicator extends React.Component {
     render() {
         return (
-            <div
-                className={
-                    this.props.final ? "indincator-f" : "indincator"
-                }
-            >
+            <div className={this.props.final ? "indincator-f" : "indincator"}>
                 <p
                     className={
                         this.props.final
