@@ -1,7 +1,6 @@
 .indincator {
-    width: 359px;
+    width: 360px;
     height: 90px;
-    margin: 20px;
 
     background: #ffffff;
     border: 1px solid #e6e6e6;
@@ -28,5 +27,39 @@
     padding-right: 20px;
     height: 25px;
     font-size: 25px;
+    color: #4999ea;
+}
+
+.indincator-f {
+    width: 570px;
+    height: 78px;
+    margin: 0px auto;
+
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-column: 1 / -1;
+}
+
+.indicator__name-f {
+    margin: auto 0px;
+    padding-left: 22px;
+    font-size: 22px;
+}
+
+.indicator__result-f svg {
+    padding-right: 8px;
+    height: 18px;
+    width: 18px;
+}
+
+.indicator__result-f {
+    margin: auto 0px auto auto;
+    padding-right: 20px;
+    height: 30px;
+    font-size: 30px;
     color: #4999ea;
 }

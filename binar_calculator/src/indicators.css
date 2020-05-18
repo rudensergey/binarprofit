@@ -1,0 +1,9 @@
+.indicators {
+	width: 1150px;
+    background-color: #e5f4ff;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr min-content;
+    grid-gap: 30px;
+}
