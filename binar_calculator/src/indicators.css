@@ -7,3 +7,33 @@
     grid-template-rows: 1fr 1fr 1fr min-content;
     grid-gap: 30px;
 }
+
+@media (max-width: 1200px) {
+    .indicators {
+        width: 950px;
+    }
+}
+
+@media (max-width: 990px) {
+    .indicators {
+        width: 616px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr min-content;
+    }
+}
+
+@media (max-width: 990px) {
+    .indincators {
+        width: 293px;
+        height: 86px;
+    }
+}
+
+@media (max-width: 700px) {
+    .indicators {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, 1fr) min-content;
+        grid-gap: 10px;
+    }
+}

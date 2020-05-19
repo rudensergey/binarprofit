@@ -64,3 +64,75 @@
     font-size: 30px;
     color: #4999ea;
 }
+
+@media (max-width: 1200px) {
+    .indincator {
+        width: 293px;
+        height: 86px;
+    }
+
+    .indicator__name {
+        font-size: 14px;
+    }
+
+    .indicator__result {
+        height: 18px;
+        font-size: 18px;
+    }
+
+    .indincator-f {
+        width: 470px;
+        height: 78px;
+    }
+
+    .indicator__name-f {
+        font-size: 18px;
+    }
+
+    .indicator__result-f svg {
+        height: 18px;
+        width: 18px;
+    }
+
+    .indicator__result-f {
+        padding-bottom: 5px;
+        height: 26px;
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 990px) {
+    .indincator {
+        width: 293px;
+        height: 86px;
+    }
+}
+
+@media (max-width: 700px) {
+    .indincator {
+        width: 90%;
+        height: 86px;
+        margin: 0px auto;
+    }
+
+    .indincator-f {
+        width: 90%;
+        height: 78px;
+        margin: 0px auto;
+    }
+
+    .indicator__name-f {
+        margin: auto 0px;
+        padding-left: 18px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    
+    .indicator__result-f {
+        margin: auto 0px auto auto;
+        padding-right: 20px;
+        height: 14px;
+        font-size: 14px;
+        color: #4999ea;
+    }
+}

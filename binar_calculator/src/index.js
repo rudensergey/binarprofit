@@ -2,6 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import * as serviceWorker from "./serviceWorker";
 
+import Slider from "rc-slider";
+import "rc-slider/assets/index.css";
+
 import "./index.css";
 import "./sum.css";
 import Indicators from "./Indicators";
@@ -9,6 +12,8 @@ import Indicators from "./Indicators";
 class Sum extends React.Component {
     constructor(props) {
         super(props);
+
+        this.handleDrag = this.handleDrag.bind(this)
         this.svg = (
             <svg
                 width="153"
@@ -23,6 +28,11 @@ class Sum extends React.Component {
                 />
             </svg>
         );
+    }
+
+    handleDrag(e) {
+        
+        console.log(e)
     }
 
     render() {
@@ -70,13 +80,27 @@ class Sum extends React.Component {
                     </div>
                 </div>
 
-                <div id="timeline" className="term__line">
-                    <div
-                        id="toggle"
-                        className="term__toggle"
-                        onTouchStart={this.handleTouchDrag}
-                        onMouseDown={this.handleMouseDrag}
-                    ></div>
+                <div className="term__line">
+                    <Slider
+                        min={0}
+                        defaultValue={1}
+                        onChange={this.handleDrag}
+                        marks={{
+                            0: 100,
+                            7: 250,
+                            15: 500,
+                            23: 1000,
+                            32: 2500,
+                            40.5: 5000,
+                            50: 10000,
+                            60: 20000,
+                            69: 35000,
+                            79: 50000,
+                            89: 75000,
+                            100: 100000,
+                        }}
+                        step={null}
+                    />
                 </div>
             </div>
         );
