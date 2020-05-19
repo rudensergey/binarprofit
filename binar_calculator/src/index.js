@@ -41,7 +41,7 @@ class Sum extends React.Component {
         if (e === 69) this.props.handleFunc(35000);
         if (e === 79) this.props.handleFunc(50000);
         if (e === 89) this.props.handleFunc(75000);
-        if (e === 100) this.props.handleFunc(10000);
+        if (e === 100) this.props.handleFunc(100000);
     }
 
     render() {
@@ -126,7 +126,7 @@ class Main extends React.Component {
     }
 
     updateValue(num) {
-        this.setState({ value: num }, ()=>console.log(this.state));
+        this.setState({ value: num }, () => console.log(this.state));
     }
 
     render() {

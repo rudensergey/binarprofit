@@ -60,7 +60,8 @@ const results = {
         sixth: 7,
         seventh: 5,
         eight: 1,
-        nineth: 5600,
+        nineth: 0,
+        tenth: 5600,
     },
     5000: {
         first: 5000,
@@ -197,6 +198,13 @@ export default class Indicators extends React.Component {
                     final={true}
                     curr={true}
                 />
+
+                <p className="warning">
+                    * Данный расчёт был произведён по средней базовой ставке
+                    доходности за весь срок работы программы. Так как базовая
+                    ставка доходности плавающая и может изменяться ежедневно,
+                    итоговая сумма может отличаться от текущего расчёта.
+                </p>
             </div>
         );
     }

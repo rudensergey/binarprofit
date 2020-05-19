@@ -9,6 +9,7 @@
 
     display: grid;
     grid-template-columns: repeat(12, auto);
+    user-select: none;
 }
 
 .block {
@@ -93,3 +94,25 @@
     }
 }
 
+@media (max-width: 700px) {
+    .term {
+        width: 100%;
+    }
+
+    .block {
+        display: none;
+    }
+
+    .term {
+        height: 50px;
+    }
+
+    .term-blocks {
+        height: 0px;
+    }
+
+    .term__line {
+        height: 3px;
+        width: 80%;
+    }
+}
