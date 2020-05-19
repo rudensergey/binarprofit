@@ -12,8 +12,6 @@ import Indicators from "./Indicators";
 class Sum extends React.Component {
     constructor(props) {
         super(props);
-
-        this.handleDrag = this.handleDrag.bind(this)
         this.svg = (
             <svg
                 width="153"
@@ -28,11 +26,22 @@ class Sum extends React.Component {
                 />
             </svg>
         );
+        this.handleDrag = this.handleDrag.bind(this);
     }
 
     handleDrag(e) {
-        
-        console.log(e)
+        if (e === 0) this.props.handleFunc(100);
+        if (e === 7) this.props.handleFunc(250);
+        if (e === 15) this.props.handleFunc(500);
+        if (e === 23) this.props.handleFunc(1000);
+        if (e === 32) this.props.handleFunc(2500);
+        if (e === 40.5) this.props.handleFunc(5000);
+        if (e === 50) this.props.handleFunc(10000);
+        if (e === 60) this.props.handleFunc(20000);
+        if (e === 69) this.props.handleFunc(35000);
+        if (e === 79) this.props.handleFunc(50000);
+        if (e === 89) this.props.handleFunc(75000);
+        if (e === 100) this.props.handleFunc(10000);
     }
 
     render() {
@@ -86,18 +95,18 @@ class Sum extends React.Component {
                         defaultValue={1}
                         onChange={this.handleDrag}
                         marks={{
-                            0: 100,
-                            7: 250,
-                            15: 500,
-                            23: 1000,
-                            32: 2500,
-                            40.5: 5000,
-                            50: 10000,
-                            60: 20000,
-                            69: 35000,
-                            79: 50000,
-                            89: 75000,
-                            100: 100000,
+                            0: 0,
+                            7: 0,
+                            15: 0,
+                            23: 0,
+                            32: 0,
+                            40.5: 0,
+                            50: 0,
+                            60: 0,
+                            69: 0,
+                            79: 0,
+                            89: 0,
+                            100: 0,
                         }}
                         step={null}
                     />
@@ -108,12 +117,24 @@ class Sum extends React.Component {
 }
 
 class Main extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            value: 100,
+        };
+        this.updateValue = this.updateValue.bind(this);
+    }
+
+    updateValue(num) {
+        this.setState({ value: num }, ()=>console.log(this.state));
+    }
+
     render() {
         return (
-            <div class="main">
+            <div className="main">
                 <h2 className="main__topic">Калькулятор доходности</h2>
-                <Sum />
-                <Indicators />
+                <Sum handleFunc={this.updateValue} />
+                <Indicators value={this.state.value} />
             </div>
         );
     }
